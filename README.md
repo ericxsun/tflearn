@@ -1,2 +1,4 @@
 # tflearn
-learn on Tensorflow
+
+Learning [TensorFlow](https://github.com/tensorflow/tensorflow)
+
