@@ -12,10 +12,15 @@ $ sudo pip install six numpy wheel
 $ brew uninstall bazel
 $ brew install bazel
 
-$ cd protobuf-3.3.0/python
+if protoc is not installed
+$ brew install protobuf # the latest version
+
+else
+
+$ cd protobuf-3.3.0/python  # https://github.com/google/protobuf/releases # source
 $ python setup.py build
 $ python setup.py test
-$ cd .. && ./autogen.sh
+$ cd .. && ./autogen.sh && ./configure
 $ make && sudo make install
 $ protoc --version
 libprotoc 3.3.0
